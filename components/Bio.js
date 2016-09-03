@@ -2,7 +2,7 @@ import React from 'react'
 import { config } from 'config'
 import { rhythm } from 'utils/typography'
 import { prefixLink } from 'gatsby-helpers'
-import profilePic from './profile-pic.jpg'
+import profilePic from './Hunt_Andrew.png'
 
 class Bio extends React.Component {
   render () {
@@ -17,13 +17,18 @@ class Bio extends React.Component {
           alt={`author ${config.authorName}`}
           style={{
             float: 'left',
-            marginRight: rhythm(1/4),
+            display: 'inline',
+            marginRight: rhythm(1/2),
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
+            width: rhythm(6),
+            height: rhythm(6),
+            boxShadow: '0px 5px 3px 0px rgba(0,0,0,0.75)',
+            verticalAlign: 'middle',
           }}
         />
-        Written by <strong>{config.authorName}</strong> who lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
+        <strong>{config.authorName}</strong> is a senior at Princeton University and loves building cool things.
+
+        Check out his <a href="/resume/">resume</a>.
       </p>
     )
   }
